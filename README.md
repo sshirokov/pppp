@@ -4,6 +4,8 @@ goals.
 
 ## Requirements
 
+[SDL 1.2](http://www.libsdl.org/)
+
 [SBCL](http://www.sbcl.org/) with **thread support**.
 
 The code should be as portable as its dependencies, the scaffolding
