@@ -8,5 +8,5 @@ init: | sanity-check quicklisp
 	$(MAKE) -C $(ROOT)/vendor init
 	@echo "=> Environment Initialized."
 
-develop: | init asdf
+develop: | init asdf cocoahelper
 	@echo "=> You should be good to go."
