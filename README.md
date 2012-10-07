@@ -4,9 +4,18 @@ goals.
 
 ## Requirements
 
-[SBCL](http://www.sbcl.org/) with thread support.
+[SBCL](http://www.sbcl.org/) with **thread support**.
 
-[GNU Make](http://www.gnu.org/software/make/)
+The code should be as portable as its dependencies, the scaffolding
+should have enough hooks to be made portable, but only SBCL specific
+defaults are shipping.
+
+[GNU Make](http://www.gnu.org/software/make/) is used to bootstrap the
+project. Is only needed for development, or where no other structure
+to access lisp systems is in place.
+
+THe only caveat of the `make develop` scaffold is that it ensures the `vendor/`
+subdirectory is of a higher priority on the ASDF search path than usual.
 
 ## Setup
 
