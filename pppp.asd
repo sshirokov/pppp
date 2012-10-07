@@ -9,7 +9,10 @@
                :bordeaux-threads
                :arnesi
                :log5
-               :alexandria)
+               :alexandria
+
+               :lispbuilder-sdl
+               :cl-opengl)
 
   :components ((:module "src" :components
                         ((:file "package")
