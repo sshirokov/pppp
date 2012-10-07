@@ -15,7 +15,7 @@
                       (res (and (> (length ql-str) 0)
                                 (asdf:run-shell-command "find ~s -name 'cocoahelper' | xargs make -C" ql-str))))
                  (if (not (equalp res 0))
-                   (format *error-output* ">> Compilation of cocoahelper failed, not invoking retry~%" res)
+                   (format *error-output* ">> Compilation of cocoahelper failed, not invoking retry~%")
                    (progn
                      (setf tried t)
                      (invoke-restart (find-restart 'asdf:retry))))))))
