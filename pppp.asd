@@ -18,5 +18,6 @@
                         ((:file "package")
                          (:file "helpers" :depends-on ("package"))
 
-                         ;; Basic reactor
-                         (:file "pppp" :depends-on ("package" "helpers"))))))
+                         (:file "pppp" :depends-on ("package" "helpers"))
+                         (:file "init" :depends-on ("pppp"))
+                         (:file "loop" :depends-on ("pppp"))))))
