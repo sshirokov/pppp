@@ -27,7 +27,7 @@
 ;; Generics
 ;;
 (defgeneric draw (pppp))
-(defgeneric tick (pppp dt))
+(defgeneric tick (pppp timestep elapsed))
 (defgeneric run (pppp &key))
 
 
@@ -42,4 +42,6 @@
                 (/ (screen-height pppp) 2.0)
                 0))
 
+;; TODO: Stubs
+(defmethod tick (ppppp expected elapsed))
 (defmethod draw ((pppp pppp)))

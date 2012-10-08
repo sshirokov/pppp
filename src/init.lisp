@@ -5,6 +5,7 @@
 
 (defmethod initialize-instance :after ((pppp pppp) &key)
   "Initialize the screen surface and OpenGL subsystems of `pppp'"
+  (sdl:init-sdl)
   (setf (screen pppp)
         (sdl:window (width pppp) (height pppp)
                     :fps (make-instance 'sdl:fps-timestep :dt 10)
