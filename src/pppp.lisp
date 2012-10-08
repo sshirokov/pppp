@@ -6,6 +6,10 @@
 (defcategory fps)
 (defcategory pppp)
 
+
+;;
+;; Main `pppp' container
+;;
 (defclass pppp ()
   ((title :initarg :title
           :initform "Parenthesis Powered Pixel Pusher"
